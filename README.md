@@ -1,15 +1,5 @@
-Welcome to your new dbt project!
 
-### Using the starter project
+### DBT Snowflake Documentation Macro
 
-Try running the following commands:
-- dbt run
-- dbt test
+Run the macro via the following command and then copy it into your schema file.  You can run it for a model or a folder.  Be careful as the output goes to the commandline and can't be downloaded.
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
