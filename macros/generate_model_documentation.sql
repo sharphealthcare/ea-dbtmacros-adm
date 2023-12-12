@@ -12,7 +12,7 @@
     model paths as well as improve the loop for sources.
     ######################################################}
 
-    {% set model_paths = get_model_paths() %}
+    {##JG##% set model_paths = get_model_paths() %##JG##}
     {% set my_models = codegen.get_models() %}
     {% set my_model = my_unique_model %}    
 
