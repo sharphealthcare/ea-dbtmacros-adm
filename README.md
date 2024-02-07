@@ -6,7 +6,7 @@ Run the macro via the following command and then copy it into your schema file. 
 To use the generate_model_documentation macro: 
 1. Update packages.yml with the following
   - git: "https://github.com/sharphealthcare/ea-dbtmacros-adm.git"
-    revision: 1.1.3
+    revision: 1.1.4
   - package: dbt-labs/codegen
     version: 0.10.0    
 2. dbt deps
