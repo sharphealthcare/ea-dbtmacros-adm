@@ -200,10 +200,10 @@
             {%- endif -%}
         {%- endfor -%}
         
-        {%- if model_columns -%}
+        {##%- if model_columns -%##}
             {##JG##% do log("----->Looping through model_columns = " ~ model_columns, info=true) %##JG##}
             {{ generate_model_yaml_header(model_names = my_model_names, upstream_descriptions=True, my_table_name = model_columns, counter = counter  ) }}
-        {%- endif -%}
+        {##%- endif -%##}
     {%- endif -%}
     {%- do my_model_array.append( model_name ) -%}   
     {%- endif -%}  
