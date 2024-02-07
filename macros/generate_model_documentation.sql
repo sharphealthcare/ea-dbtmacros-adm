@@ -307,7 +307,7 @@
     {%- set column_datatype = column.data_type | default('') -%}
     {%- do model_yaml.append('      - name: ' ~ column_name | lower ) -%}
     {%- do model_yaml.append('        description: "' ~ column_description ~ '"') -%}
-    {%- do model_yaml.append('        data_type: ' ~ column_datatype ~ ') -%}
+    {%- do model_yaml.append('        data_type: ' ~ column_datatype ~ '') -%}
     {%- do model_yaml.append('') -%}
 
     {%- if column.fields|length > 0 -%}
