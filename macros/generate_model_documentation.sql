@@ -308,7 +308,8 @@
     {%- do model_yaml.append('      - name: ' ~ column_name | lower ) -%}
     {%- do model_yaml.append('        description: "' ~ column_description ~ '"') -%}
     {% if 'character varying' in column_datatype %}
-        {%- do model_yaml.append('        data_type: ' ~ column_datatype|replace("character varying", "varchar") ~ '') -%}
+        {##%- do model_yaml.append('        data_type: ' ~ column_datatype|replace("character varying", "varchar") ~ '') -%##}
+        {%- do model_yaml.append("        data_type: varchar") -%}
     {% else %}
         {%- do model_yaml.append('        data_type: ' ~ column_datatype ~ '') -%}
     {% endif %}    
